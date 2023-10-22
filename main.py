@@ -20,5 +20,15 @@ optimal_order = print_optimal_order(
 )
 optimal_cost = M[0][len(matrix_dimensions) // 2 - 1]
 
+print("M Matrix:")
+for row in M:
+    for element in row:
+        print(f"{element:4}", end=" ")
+    print()
+print("P Matrix:")
+for row in P:
+    for element in row:
+        print(f"{element:4}", end=" ")
+    print()
 print("Optimal Order:", optimal_order)
 print("Optimal Cost:", optimal_cost)
